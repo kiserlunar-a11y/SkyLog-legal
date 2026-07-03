@@ -28,14 +28,15 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare site
+        run: |
+          mkdir -p _site
+          cp terms.html privacy.html delete-account.html .nojekyll _site/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: |
-            terms.html
-            privacy.html
-            delete-account.html
-            .nojekyll
+          path: _site/
 
       - name: Deploy to GitHub Pages
         id: deployment
