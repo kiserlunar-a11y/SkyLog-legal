@@ -31,7 +31,7 @@ jobs:
       - name: Prepare site
         run: |
           mkdir -p _site
-          cp terms.html privacy.html delete-account.html .nojekyll _site/
+          cp *.html .nojekyll _site/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
