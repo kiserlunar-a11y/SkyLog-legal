@@ -37,7 +37,7 @@
       체류일의 핵심은 <strong>국가별 방문 일수</strong>이며, 도시는 수집 시점 기준으로 기록됩니다.
     </li>
     <li><strong>음성 입력(선택)</strong>: 기기 OS 음성 인식으로 변환된 텍스트(음성 원본은 운영자 서버로 전송하지 않음)</li>
-    <li><strong>기기 정보</strong>: 앱 설정, 배지·연속 출석 등 로컬 데이터</li>
+    <li><strong>앱 설정·게임 진행 정보</strong>: 배지, 배지 획득일, 연속 출석, 여행자 등급 최고 활동 XP. 기기에 저장되며 로그인 시 Cloud Firestore에 동기화될 수 있음</li>
     <li><strong>광고(무료 이용 시)</strong>: Google AdMob이 배너·보상형 광고 제공 시 광고 ID 등 기기 식별자를 수집할 수 있음. SkyLog Plus 구독 또는 보상형 광고 시청으로 배너가 숨겨진 기간에는 <strong>하단 배너 광고를 표시하지 않음</strong>. 규제 적용 지역에서는 Google UMP를 통해 광고 동의·거부 선택을 처리하며, 필요한 경우 설정 &gt; 지원 &gt; 광고 개인정보 설정에서 선택을 변경할 수 있음</li>
   </ul>
 
@@ -88,7 +88,7 @@
       Country stay days are primary; cities reflect sample points.
     </li>
     <li>Optional voice-to-text on device (no raw audio sent to our servers)</li>
-    <li>Local preferences and gamification data</li>
+    <li>App preferences and gamification progress (badges, badge dates, streaks, and peak activity XP), stored on device and optionally synced to Cloud Firestore when signed in</li>
     <li><strong>Ads (free tier)</strong>: Google AdMob may collect advertising IDs when serving banner/rewarded ads. No bottom banner while Plus is active or during a rewarded ad-free period for the rest of today. In regulated regions, Google UMP processes advertising consent or opt-out choices; where required, you can change your choice in Settings &gt; Support &gt; Ad privacy choices</li>
   </ul>
 
