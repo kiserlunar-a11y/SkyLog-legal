@@ -62,14 +62,20 @@
   <h2>4. 제3자 서비스</h2>
   <p>Google(Firebase Authentication, Cloud Firestore, Cloud Storage), Mapbox(지도 — 지도 표시 시 Mapbox가 자체 개인정보 정책에 따라 사용 데이터를 수집할 수 있음), RapidAPI AeroDataBox(비행 자동 조회), Apple App Store / Google Play(SkyLog Plus 구독 결제·영수증; 결제 정보는 스토어가 처리), <strong>Google AdMob</strong>(무료 이용 시 배너·보상형 광고). 운영자는 개인정보를 판매하지 않습니다.</p>
 
-  <h2>5. 보관·삭제</h2>
-  <p>로그인 시 Firebase에 동기화될 수 있습니다. 발자국 추적 중 오프라인으로 수집된 위치 좌표는 역지오코딩 전까지 기기에 최대 7일간 보관되며, 앱을 실행하고 인터넷이 연결되면 국가·체류일로 변환합니다. 7일이 지난 좌표는 자동 삭제됩니다. 설정 &gt; 계정 삭제 및 탈퇴로 삭제를 요청하면 계정 접근이 즉시 종료되고 기기 데이터가 지워지며, 클라우드 데이터 삭제는 백그라운드에서 일반적으로 24시간 이내 완료됩니다(서비스 장애 시 더 걸릴 수 있음). <strong>계정 삭제만으로 SkyLog Plus 구독이 자동 해지되지 않으며</strong>, Google Play 또는 App Store의 구독 설정에서 별도로 해지해야 합니다. 데이터만 삭제(계정 유지) 방법은 <a href="delete-account.html">계정·데이터 삭제 안내</a>를 참고하세요.</p>
+  <h2>5. 보관 및 동기화</h2>
+  <p>비행 기록, 앱 설정 및 게임 진행 정보는 기기에 저장되며, 로그인 시 Firebase에 동기화될 수 있습니다. 발자국 추적 중 오프라인으로 수집된 위치 좌표는 역지오코딩 전까지 기기에 최대 7일간 보관됩니다. 앱을 실행하고 인터넷이 연결되면 국가·체류일 기록으로 변환하며, 7일이 지난 좌표는 자동으로 삭제합니다. 로그인하지 않은 상태의 데이터는 원칙적으로 기기에만 저장됩니다.</p>
 
-  <h2>6. 이용자 권리</h2>
+  <h2>6. 보관 기간 및 삭제</h2>
+  <p>계정과 클라우드 동기화 데이터는 계정이 유지되는 동안 보관됩니다. 설정 &gt; 계정 삭제 및 탈퇴로 삭제를 요청하면 계정 접근이 즉시 종료되고 기기 데이터가 지워지며, 클라우드 데이터 삭제는 백그라운드에서 일반적으로 24시간 이내 완료됩니다(서비스 장애 시 더 걸릴 수 있음). 법령상 보관 의무가 있는 정보는 해당 기간 동안 별도로 보관될 수 있습니다. <strong>계정 삭제만으로 SkyLog Plus 구독이 자동 해지되지 않으며</strong>, Google Play 또는 App Store의 구독 설정에서 별도로 해지해야 합니다. 데이터만 삭제하고 계정을 유지하는 방법은 <a href="delete-account.html">계정·데이터 삭제 안내</a>를 참고하세요.</p>
+
+  <h2>7. 이용자 권리</h2>
   <p>발자국 추적 중지, 로그아웃, 데이터 초기화, 계정 삭제를 할 수 있습니다. 규제 적용 지역에서는 설정 &gt; 지원 &gt; 광고 개인정보 설정을 통해 광고 선택을 변경할 수 있습니다. 문의: <a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
 
-  <h2>7. 아동</h2>
+  <h2>8. 아동</h2>
   <p>만 14세 미만 아동을 대상으로 하지 않습니다.</p>
+
+  <h2>9. 방침 변경</h2>
+  <p>법령 또는 앱 기능의 변경에 따라 본 방침을 개정할 수 있습니다. 중요한 변경 사항은 앱 안에서 안내합니다.</p>
 
   <hr>
 
@@ -102,17 +108,23 @@
   <h2>3. Permissions</h2>
   <p>Location (foreground &amp; background), optional microphone/speech, internet. On Android, system background work (WorkManager) attempts periodic (~2 h, not exact timing) and date-change footprint samples while tracking is on; we may optionally guide you to exempt the App from battery optimization. On iOS, Significant Location Change, Visit monitoring, and BGAppRefresh (midnight and about 8:00, 14:00, 22:00 — not exact timing) attempt samples; we may optionally guide you to enable Always location and Background App Refresh. Optional notifications (flight memories, record reminders, Schengen 90/180 warnings, year-end recap) are generated and scheduled on your device from on-device data — no server push; each category and quiet hours can be configured in Settings. Free tier: bottom banner and rewarded ads (watch to hide banner for the rest of today). Plus removes banner ads.</p>
 
-  <h2>4. Third parties</h2>
-  <p>Google (Firebase), Mapbox (maps; Mapbox may collect usage data under its own privacy policy), RapidAPI AeroDataBox, Apple App Store / Google Play (SkyLog Plus billing), <strong>Google AdMob</strong> (ads on free tier). We do not sell personal data.</p>
+  <h2>4. Third-party services</h2>
+  <p>We use Google Firebase Authentication, Cloud Firestore, and Cloud Storage; Mapbox for maps (Mapbox may collect usage data under its own privacy policy); RapidAPI AeroDataBox for flight auto-lookup; Apple App Store and Google Play for SkyLog Plus billing and purchase information; and <strong>Google AdMob</strong> for ads on the free tier. Their respective privacy policies and terms may apply. We do not sell personal data.</p>
 
-  <h2>5. Deletion</h2>
-  <p>While footprint tracking is on, location coordinates collected offline may be kept on-device for up to 7 days before reverse geocoding; they are converted when you open the App with internet. Coordinates older than 7 days are deleted automatically. When you request account deletion in Settings, account access ends immediately, on-device data is cleared, and cloud deletion normally finishes in the background within 24 hours (service disruptions may take longer). <strong>Deleting your account does not automatically cancel an active SkyLog Plus subscription</strong> — cancel in your store subscription settings. See <a href="delete-account.html">account &amp; data deletion</a> for partial deletion while keeping your account.</p>
+  <h2>5. Storage and sync</h2>
+  <p>Flight records, app preferences, and gamification progress are stored on your device and may sync to Firebase while you are signed in. While footprint tracking is on, location coordinates collected offline may be stored on-device for up to 7 days before reverse geocoding. They are converted into country and stay-day records when you open the App with internet, and coordinates older than 7 days are deleted automatically. Data created while signed out is generally stored only on your device.</p>
 
-  <h2>6. Children</h2>
-  <p>The App is not directed to children under 14.</p>
+  <h2>6. Retention and deletion</h2>
+  <p>Your account and synced cloud data are retained while your account remains active. When you request account deletion in Settings, account access ends immediately, on-device data is cleared, and cloud deletion normally finishes in the background within 24 hours, although service disruptions may take longer. Information that must be retained by law may be kept separately for the required period. <strong>Deleting your account does not automatically cancel an active SkyLog Plus subscription</strong>; cancel it in the applicable store's subscription settings. See <a href="delete-account.html">account and data deletion</a> to delete data while keeping your account.</p>
 
-  <h2>7. Contact</h2>
-  <p>In regulated regions, you can change advertising choices in Settings &gt; Support &gt; Ad privacy choices. Contact: <a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
+  <h2>7. Your rights</h2>
+  <p>You may stop footprint tracking, sign out, reset data, or delete your account at any time. In regulated regions, you can change advertising choices in Settings &gt; Support &gt; Ad privacy choices. Contact: <a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
+
+  <h2>8. Children</h2>
+  <p>The App is not directed to children under 14, and we do not knowingly collect information from children in that age group.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>We may update this policy to reflect changes in the law or the App's features. We will notify you in the App of material changes.</p>
 
   <hr>
 
@@ -154,16 +166,19 @@
   <h2>4. 外部サービス</h2>
   <p>運営者は、Google（Firebase Authentication、Cloud Firestore、Cloud Storage）、Mapbox（地図。Mapboxは同社のプライバシーポリシーに従って利用データを取得する場合があります）、RapidAPI AeroDataBox（フライトの自動検索）、Apple App Store / Google Play（SkyLog Plusの決済および購入情報）、ならびにGoogle AdMob（無料プランの広告）を利用します。各サービスのプライバシーポリシーその他の規約も適用されます。運営者は、個人情報を販売しません。</p>
 
-  <h2>5. 保存および削除</h2>
-  <p>サインイン時にデータがFirebaseへ同期される場合があります。あしあと追跡中にオフラインで取得された位置座標は、逆ジオコーディングが完了するまで端末内に最長7日間保存されます。本アプリを起動してインターネットに接続すると国および滞在日数の記録に変換され、7日を超えた座標は自動的に削除されます。設定からアカウント削除の申請が受け付けられると、アカウントへのアクセスは直ちに終了し、端末内のデータは消去されます。クラウドデータの削除は通常24時間以内に完了しますが、サービス障害が発生した場合はさらに時間を要することがあります。アカウントを削除してもSkyLog Plusのサブスクリプションは自動的に解約されません。App StoreまたはGoogle Playのサブスクリプション設定から別途解約してください。アカウントを維持したままデータのみを削除する方法については、<a href="delete-account.html">アカウントおよびデータの削除案内</a>をご確認ください。</p>
+  <h2>5. 保存および同期</h2>
+  <p>フライト記録、アプリ設定およびゲーム進行情報は端末に保存され、サインイン時にFirebaseへ同期される場合があります。あしあと追跡中にオフラインで取得された位置座標は、逆ジオコーディングが完了するまで端末内に最長7日間保存されます。本アプリを起動してインターネットに接続すると、国および滞在日数の記録に変換され、7日を超えた座標は自動的に削除されます。サインインしていない状態で作成したデータは、原則として端末内にのみ保存されます。</p>
 
-  <h2>6. 利用者の権利</h2>
+  <h2>6. 保存期間および削除</h2>
+  <p>アカウントおよびクラウドへ同期されたデータは、アカウントが有効な間保存されます。設定からアカウント削除の申請が受け付けられると、アカウントへのアクセスは直ちに終了し、端末内のデータは消去されます。クラウドデータの削除は通常24時間以内に完了しますが、サービス障害が発生した場合はさらに時間を要することがあります。法令により保存が義務付けられる情報は、所定の期間、別途保存される場合があります。アカウントを削除してもSkyLog Plusのサブスクリプションは自動的に解約されません。App StoreまたはGoogle Playのサブスクリプション設定から別途解約してください。アカウントを維持したままデータのみを削除する方法については、<a href="delete-account.html">アカウントおよびデータの削除案内</a>をご確認ください。</p>
+
+  <h2>7. 利用者の権利</h2>
   <p>利用者は、いつでもあしあと追跡の停止、サインアウト、データの初期化、およびアカウントの削除を行うことができます。規制対象地域では、設定 ＞ サポート ＞ 広告のプライバシー設定から広告に関する選択を変更できます。お問い合わせ：<a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
 
-  <h2>7. 未成年者</h2>
+  <h2>8. 未成年者</h2>
   <p>本アプリは14歳未満の方を対象としておらず、当該年齢の方に関する情報を意図的に取得することはありません。</p>
 
-  <h2>8. 本ポリシーの変更</h2>
+  <h2>9. 本ポリシーの変更</h2>
   <p>法令または本アプリの機能の変更に伴い、本ポリシーを改定することがあります。重要な変更については、本アプリ内でお知らせします。</p>
 </body>
 </html>
