@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sky Log — 개인정보 처리방침 / Privacy Policy</title>
+  <title>SkyLog — 개인정보 처리방침 / Privacy Policy</title>
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 24px 20px 48px; color: #1a1a1a; }
     h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
@@ -12,14 +12,21 @@
     hr { border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }
     a { color: #1565c0; }
     ul { padding-left: 1.25rem; }
+    .languages { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 1.5rem; font-size: 0.95rem; }
   </style>
 </head>
 <body>
-  <h1>개인정보 처리방침</h1>
-  <p class="meta">Sky Log · 최종 업데이트: 2026-07-19 · 문의: <a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
+  <nav class="languages" aria-label="Language">
+    <a href="#privacy-ko">한국어</a>
+    <a href="#privacy-en">English</a>
+    <a href="#privacy-ja">日本語</a>
+  </nav>
+
+  <h1 id="privacy-ko">개인정보 처리방침</h1>
+  <p class="meta">SkyLog · 최종 업데이트: 2026-07-26 · 문의: <a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
 
   <h2>1. 개요</h2>
-  <p>Sky Log(이하 "앱")은 여행·비행 기록 서비스를 제공합니다. 본 방침은 앱 운영자 웨이포인트 코드(Waypoint Code)(이하 "운영자")가 수집·이용·보관·삭제하는 개인정보와 권리에 대해 설명합니다.</p>
+  <p>SkyLog(이하 "앱")은 여행·비행 기록 서비스를 제공합니다. 본 방침은 앱 운영자 웨이포인트 코드(Waypoint Code)(이하 "운영자")가 수집·이용·보관·삭제하는 개인정보와 권리에 대해 설명합니다.</p>
 
   <h2>2. 수집하는 정보</h2>
   <ul>
@@ -66,11 +73,11 @@
 
   <hr>
 
-  <h1>Privacy Policy (English)</h1>
-  <p class="meta">Last updated: 2026-07-19 · Contact: <a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
+  <h1 id="privacy-en">Privacy Policy (English)</h1>
+  <p class="meta">Last updated: 2026-07-26 · Contact: <a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
 
   <h2>1. Overview</h2>
-  <p>Sky Log ("the App") is a travel and flight journal. This policy explains what personal data Waypoint Code ("we", the operator) collects, uses, stores, and deletes, and your rights. By using the App you agree to this policy.</p>
+  <p>SkyLog ("the App") is a travel and flight journal. This policy explains what personal data Waypoint Code ("we", the operator) collects, uses, stores, and deletes, and your rights. By using the App you agree to this policy.</p>
 
   <h2>2. Data we collect</h2>
   <ul>
@@ -106,5 +113,57 @@
 
   <h2>7. Contact</h2>
   <p>In regulated regions, you can change advertising choices in Settings &gt; Support &gt; Ad privacy choices. Contact: <a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
+
+  <hr>
+
+  <h1 id="privacy-ja">プライバシーポリシー（日本語）</h1>
+  <p class="meta">SkyLog · 最終更新日：2026-07-26 · お問い合わせ：<a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
+
+  <h2>1. 概要</h2>
+  <p>SkyLog（以下「本アプリ」）は、旅行およびフライトの記録サービスです。本ポリシーは、本アプリの運営者であるWaypoint Code（以下「運営者」）が取り扱う個人情報、その利用目的、保存・削除方法、および利用者の権利について説明するものです。本アプリを利用することにより、本ポリシーに同意したものとみなされます。</p>
+
+  <h2>2. 取得する情報</h2>
+  <ul>
+    <li><strong>アカウント情報</strong>：GoogleまたはAppleでサインインした場合のメールアドレス、表示名、プロフィール画像URL（提供される場合）</li>
+    <li><strong>フライト記録</strong>：利用者が入力または自動検索した便名、日付、空港、航空会社、距離その他の関連情報</li>
+    <li><strong>トラベルパスポートのプロフィール写真（任意）</strong>：利用者が選択した画像。端末に保存され、サインイン時にFirebase Storageへ同期される場合があります</li>
+    <li><strong>あしあと（任意）</strong>：GPS座標を国、滞在日数、および取得時点の都市に変換した訪問記録。位置情報を「常に許可」した場合：
+      <ul>
+        <li><strong>Android</strong>：本アプリの使用中に約500m移動したとき、および本アプリを開いていないときは約2時間ごと（正確な時刻は保証されません）または日付の変更時（午前0時）に、位置情報の取得を1回試みます。GPSまたはネットワークによる取得に失敗した場合、最後に確認された国を使用して滞在日数を更新することがあります</li>
+        <li><strong>iOS</strong>：本アプリを開いていないときを含め、約500m以上の大きな移動または訪問先への到着（Visit）を検知したときに取得される場合があります。また、午前0時ならびに8時、14時、22時頃（正確な時刻は保証されません）にバックグラウンド更新を試みます。GPSまたはネットワークによる取得に失敗した場合、最後に確認された国を使用して滞在日数を更新することがあります</li>
+        <li>あしあとタブの「今すぐ更新」から手動で記録できます</li>
+        <li>ホーム画面ウィジェットは滞在情報の概要のみを表示し、ウィジェット自体が位置情報を取得することはありません</li>
+        <li><strong>オフライン時</strong>：位置座標は端末内に最長7日間一時保存され、本アプリを起動してインターネットに接続した際に国・滞在日数へ変換されます。7日を超えた座標は自動的に削除されます</li>
+      </ul>
+      滞在日数は国別の訪問日数を中心に記録し、都市は位置情報を取得した時点の地点に基づいて記録されます。
+    </li>
+    <li><strong>音声入力（任意）</strong>：端末のOSが音声認識によって変換したテキスト。音声データそのものを運営者のサーバーへ送信することはありません</li>
+    <li><strong>アプリ設定およびゲーム進行情報</strong>：バッジ、バッジ獲得日、連続記録、トラベラーランクの最高アクティビティXP。端末に保存され、サインイン時にCloud Firestoreへ同期される場合があります</li>
+    <li><strong>広告関連情報（無料プラン）</strong>：Google AdMobがバナー広告またはリワード広告を配信する際、広告IDその他の端末識別情報を取得する場合があります。SkyLog Plusの利用中、またはリワード広告の視聴によりバナーが非表示となっている期間は、画面下部のバナー広告は表示されません。規制対象地域では、Google UMPを通じて広告に関する同意または拒否の選択が処理されます。必要な場合は、設定 ＞ サポート ＞ 広告のプライバシー設定から選択内容を変更できます</li>
+  </ul>
+
+  <h2>3. 権限および利用目的</h2>
+  <ul>
+    <li><strong>位置情報（フォアグラウンド・バックグラウンド）</strong>：あしあと機能における国、滞在日数、および取得時点の都市の記録に使用します。AndroidではWorkManagerにより約2時間ごとおよび日付の変更時に、iOSではSignificant Location Change、Visitモニタリング、およびBGAppRefreshにより位置情報の取得を試みます。利用者はいつでも追跡を停止し、または権限を取り消すことができます</li>
+    <li><strong>マイク・音声認識</strong>：フライト情報の音声入力に使用します。該当する入力画面でのみ使用し、音声認識はOSが提供する機能によって処理されます</li>
+    <li><strong>インターネット接続</strong>：アカウントへのサインイン、クラウド同期、フライトの自動検索、および地図の読み込みに使用します</li>
+    <li><strong>通知（任意）</strong>：過去の同時期のフライト、記録リマインダー、シェンゲン90/180ルールに関する警告、および年末まとめの通知に使用します。通知は端末内のデータに基づいて端末上で生成・予約され、サーバーからのプッシュ通知は使用しません</li>
+    <li><strong>広告（無料プラン）</strong>：画面下部のバナー広告およびリワード広告の表示に使用します。SkyLog Plusの利用中はバナー広告が表示されません</li>
+  </ul>
+
+  <h2>4. 外部サービス</h2>
+  <p>運営者は、Google（Firebase Authentication、Cloud Firestore、Cloud Storage）、Mapbox（地図。Mapboxは同社のプライバシーポリシーに従って利用データを取得する場合があります）、RapidAPI AeroDataBox（フライトの自動検索）、Apple App Store / Google Play（SkyLog Plusの決済および購入情報）、ならびにGoogle AdMob（無料プランの広告）を利用します。各サービスのプライバシーポリシーその他の規約も適用されます。運営者は、個人情報を販売しません。</p>
+
+  <h2>5. 保存および削除</h2>
+  <p>サインイン時にデータがFirebaseへ同期される場合があります。あしあと追跡中にオフラインで取得された位置座標は、逆ジオコーディングが完了するまで端末内に最長7日間保存されます。本アプリを起動してインターネットに接続すると国および滞在日数の記録に変換され、7日を超えた座標は自動的に削除されます。設定からアカウント削除の申請が受け付けられると、アカウントへのアクセスは直ちに終了し、端末内のデータは消去されます。クラウドデータの削除は通常24時間以内に完了しますが、サービス障害が発生した場合はさらに時間を要することがあります。アカウントを削除してもSkyLog Plusのサブスクリプションは自動的に解約されません。App StoreまたはGoogle Playのサブスクリプション設定から別途解約してください。アカウントを維持したままデータのみを削除する方法については、<a href="delete-account.html">アカウントおよびデータの削除案内</a>をご確認ください。</p>
+
+  <h2>6. 利用者の権利</h2>
+  <p>利用者は、いつでもあしあと追跡の停止、サインアウト、データの初期化、およびアカウントの削除を行うことができます。規制対象地域では、設定 ＞ サポート ＞ 広告のプライバシー設定から広告に関する選択を変更できます。お問い合わせ：<a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
+
+  <h2>7. 未成年者</h2>
+  <p>本アプリは14歳未満の方を対象としておらず、当該年齢の方に関する情報を意図的に取得することはありません。</p>
+
+  <h2>8. 本ポリシーの変更</h2>
+  <p>法令または本アプリの機能の変更に伴い、本ポリシーを改定することがあります。重要な変更については、本アプリ内でお知らせします。</p>
 </body>
 </html>
