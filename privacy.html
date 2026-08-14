@@ -43,9 +43,9 @@
       </ul>
       체류일의 핵심은 <strong>국가별 방문 일수</strong>이며, 도시는 수집 시점 기준으로 기록됩니다.
     </li>
-    <li><strong>음성 입력(선택)</strong>: 기기 OS 음성 인식으로 변환된 텍스트(음성 원본은 운영자 서버로 전송하지 않음)</li>
+    <li><strong>음성 입력(선택)</strong>: 기기 OS 또는 OS가 선택한 음성 인식 제공자가 변환한 텍스트. 기기·설정·제공자에 따라 네트워크 음성 인식 서비스가 사용될 수 있으며, 운영자 서버는 음성 원본을 수신하거나 저장하지 않음</li>
     <li><strong>앱 설정·게임 진행 정보</strong>: 배지, 배지 획득일, 연속 출석, 여행자 등급 최고 활동 XP. 기기에 저장되며 로그인 시 Cloud Firestore에 동기화될 수 있음</li>
-    <li><strong>광고(무료 이용 시)</strong>: Google AdMob이 배너·보상형 광고 제공 시 광고 ID 등 기기 식별자를 수집할 수 있음. SkyLog Plus 구독 또는 보상형 광고 시청으로 배너가 숨겨진 기간에는 <strong>하단 배너 광고를 표시하지 않음</strong>. 규제 적용 지역에서는 Google UMP를 통해 광고 동의·거부 선택을 처리하며, 필요한 경우 설정 &gt; 지원 &gt; 광고 개인정보 설정에서 선택을 변경할 수 있음</li>
+    <li><strong>광고(무료 이용 시)</strong>: Google AdMob이 광고 제공·분석·사기 방지를 위해 IP 주소에서 추정한 대략적 위치, 앱 상호작용, 진단 정보, 기기 식별자 또는 광고 ID를 처리할 수 있음. SkyLog Plus 구독 또는 보상형 광고 시청으로 배너가 숨겨진 기간에는 <strong>하단 배너 광고를 표시하지 않음</strong>. 규제 적용 지역에서는 Google UMP를 통해 광고 동의·거부 선택을 처리하며, 필요한 경우 설정 &gt; 지원 &gt; 광고 개인정보 설정에서 선택을 변경할 수 있음</li>
   </ul>
 
   <h2>3. 권한 및 이용 목적</h2>
@@ -53,14 +53,14 @@
     <li><strong>위치(포그라운드·백그라운드)</strong>: 발자국 기능(국가·체류일 기록). Android 백그라운드는 시스템 백그라운드 작업(WorkManager)으로 약 2시간마다·날짜 변경 시 샘플을 시도. iOS 백그라운드는 Significant Location Change·Visit·BGAppRefresh(자정 및 약 08·14·22시경, 시각 보장 없음)로 샘플을 시도</li>
     <li><strong>배터리 최적화(Android, 선택)</strong>: 백그라운드 기록 신뢰성을 위해 배터리 최적화 예외 안내를 제공할 수 있음(사용자가 설정에서 선택)</li>
     <li><strong>백그라운드 기록 안내(iOS, 선택)</strong>: 「항상」 위치·백그라운드 앱 새로고침 설정 안내를 제공할 수 있음(사용자가 설정에서 선택)</li>
-    <li><strong>마이크·음성 인식</strong>: 비행 정보 음성 입력(해당 화면에서만)</li>
+    <li><strong>마이크·음성 인식</strong>: 비행 정보 음성 입력(해당 화면에서만). 기기·설정·제공자에 따라 OS가 네트워크 음성 인식 서비스를 사용할 수 있음</li>
     <li><strong>인터넷</strong>: 로그인·동기화, 비행 자동 조회, 지도</li>
     <li><strong>알림(선택)</strong>: 이맘때 비행 추억·기록 리마인더·쉥겐 90/180 경고·연말 리캡. 모든 알림은 기기 내 데이터로 기기에서 생성·예약되며(서버 푸시 없음), 설정에서 카테고리별 켜기/끄기와 야간 방해 금지 시간을 지정할 수 있음</li>
     <li><strong>광고(무료)</strong>: 하단 배너·보상형 광고. 무료 기본 자동 조회는 월 30회이며, 지원되는 앱 버전에서는 동영상 시청 시 오늘 하루 배너 숨김 또는 자동 조회 3회 지급이 가능함. 이용 가능 시점·일일 한도 등 세부 조건은 앱 화면을 따름. Plus 구독 시 배너 미표시</li>
   </ul>
 
   <h2>4. 제3자 서비스</h2>
-  <p>Google(Firebase Authentication, Cloud Firestore, Cloud Storage), Mapbox(지도 — 지도 표시 시 Mapbox가 자체 개인정보 정책에 따라 사용 데이터를 수집할 수 있음), RapidAPI AeroDataBox(비행 자동 조회), Apple App Store / Google Play(SkyLog Plus 구독 결제·영수증; 결제 정보는 스토어가 처리), <strong>Google AdMob</strong>(무료 이용 시 배너·보상형 광고). 운영자는 개인정보를 판매하지 않습니다.</p>
+  <p>Google(Firebase Authentication, Cloud Firestore, Cloud Storage), Mapbox(지도 — 지도 표시 시 Mapbox가 자체 개인정보 처리방침에 따라 사용 데이터와 위치 관련 원격 측정 데이터를 처리할 수 있음), RapidAPI AeroDataBox(비행 자동 조회), Apple App Store / Google Play(SkyLog Plus 구독 결제·영수증; 결제 정보는 스토어가 처리), <strong>Google AdMob</strong>(무료 이용 시 배너·보상형 광고 — IP 주소에서 추정한 대략적 위치, 앱 상호작용, 진단 정보, 기기 식별자 또는 광고 ID를 광고 제공·분석·사기 방지 목적으로 처리할 수 있음). 운영자는 개인정보를 판매하지 않습니다.</p>
 
   <h2>5. 보관 및 동기화</h2>
   <p>비행 기록, 앱 설정 및 게임 진행 정보는 기기에 저장되며, 로그인 시 Firebase에 동기화될 수 있습니다. 발자국 추적 중 오프라인으로 수집된 위치 좌표는 역지오코딩 전까지 기기에 최대 7일간 보관됩니다. 앱을 실행하고 인터넷이 연결되면 국가·체류일 기록으로 변환하며, 7일이 지난 좌표는 자동으로 삭제합니다. 로그인하지 않은 상태의 데이터는 원칙적으로 기기에만 저장됩니다.</p>
@@ -100,16 +100,16 @@
       </ul>
       Country stay days are primary; cities reflect sample points.
     </li>
-    <li>Optional voice-to-text on device (no raw audio sent to our servers)</li>
+    <li>Optional voice-to-text processed by the device OS or its speech-recognition provider. Depending on the device, settings, and provider, a network speech-recognition service may be used. Our servers do not receive or store raw audio</li>
     <li>App preferences and gamification progress (badges, badge dates, streaks, and peak activity XP), stored on device and optionally synced to Cloud Firestore when signed in</li>
-    <li><strong>Ads (free tier)</strong>: Google AdMob may collect advertising IDs when serving banner/rewarded ads. No bottom banner while Plus is active or during a rewarded ad-free period for the rest of today. In regulated regions, Google UMP processes advertising consent or opt-out choices; where required, you can change your choice in Settings &gt; Support &gt; Ad privacy choices</li>
+    <li><strong>Ads (free tier)</strong>: Google AdMob may process IP-derived approximate location, app interactions, diagnostics, and device or advertising identifiers to serve and measure ads and prevent fraud. No bottom banner while Plus is active or during a rewarded ad-free period for the rest of today. In regulated regions, Google UMP processes advertising consent or opt-out choices; where required, you can change your choice in Settings &gt; Support &gt; Ad privacy choices</li>
   </ul>
 
   <h2>3. Permissions</h2>
-  <p>Location (foreground &amp; background), optional microphone/speech, internet. On Android, system background work (WorkManager) attempts periodic (~2 h, not exact timing) and date-change footprint samples while tracking is on; we may optionally guide you to exempt the App from battery optimization. On iOS, Significant Location Change, Visit monitoring, and BGAppRefresh (midnight and about 8:00, 14:00, 22:00 — not exact timing) attempt samples; we may optionally guide you to enable Always location and Background App Refresh. Optional notifications (flight memories, record reminders, Schengen 90/180 warnings, year-end recap) are generated and scheduled on your device from on-device data — no server push; each category and quiet hours can be configured in Settings. Free users receive 30 base auto-lookups per month. In supported App versions, rewarded video may be used to hide the banner for the rest of today or receive 3 auto-lookups; availability, timing, daily limits, and other conditions are shown in the App. Plus removes banner ads.</p>
+  <p>Location (foreground &amp; background), optional microphone/speech, internet. Speech recognition is handled by the device OS or its provider and may use a network service depending on the device, settings, and provider. On Android, system background work (WorkManager) attempts periodic (~2 h, not exact timing) and date-change footprint samples while tracking is on; we may optionally guide you to exempt the App from battery optimization. On iOS, Significant Location Change, Visit monitoring, and BGAppRefresh (midnight and about 8:00, 14:00, 22:00 — not exact timing) attempt samples; we may optionally guide you to enable Always location and Background App Refresh. Optional notifications (flight memories, record reminders, Schengen 90/180 warnings, year-end recap) are generated and scheduled on your device from on-device data — no server push; each category and quiet hours can be configured in Settings. Free users receive 30 base auto-lookups per month. In supported App versions, rewarded video may be used to hide the banner for the rest of today or receive 3 auto-lookups; availability, timing, daily limits, and other conditions are shown in the App. Plus removes banner ads.</p>
 
   <h2>4. Third-party services</h2>
-  <p>We use Google Firebase Authentication, Cloud Firestore, and Cloud Storage; Mapbox for maps (Mapbox may collect usage data under its own privacy policy); RapidAPI AeroDataBox for flight auto-lookup; Apple App Store and Google Play for SkyLog Plus billing and purchase information; and <strong>Google AdMob</strong> for ads on the free tier. Their respective privacy policies and terms may apply. We do not sell personal data.</p>
+  <p>We use Google Firebase Authentication, Cloud Firestore, and Cloud Storage; Mapbox for maps (Mapbox may process usage data and location-related telemetry under its own privacy policy); RapidAPI AeroDataBox for flight auto-lookup; Apple App Store and Google Play for SkyLog Plus billing and purchase information; and <strong>Google AdMob</strong> for ads on the free tier (AdMob may process IP-derived approximate location, app interactions, diagnostics, and device or advertising identifiers for ad delivery, analytics, and fraud prevention). Their respective privacy policies and terms may apply. We do not sell personal data.</p>
 
   <h2>5. Storage and sync</h2>
   <p>Flight records, app preferences, and gamification progress are stored on your device and may sync to Firebase while you are signed in. While footprint tracking is on, location coordinates collected offline may be stored on-device for up to 7 days before reverse geocoding. They are converted into country and stay-day records when you open the App with internet, and coordinates older than 7 days are deleted automatically. Data created while signed out is generally stored only on your device.</p>
@@ -149,22 +149,22 @@
       </ul>
       滞在日数は国別の訪問日数を中心に記録し、都市は位置情報を取得した時点の地点に基づいて記録されます。
     </li>
-    <li><strong>音声入力（任意）</strong>：端末のOSが音声認識によって変換したテキスト。音声データそのものを運営者のサーバーへ送信することはありません</li>
+    <li><strong>音声入力（任意）</strong>：端末のOSまたはOSが選択した音声認識サービスによって変換されたテキスト。端末、設定またはサービス提供者によっては、ネットワーク経由で音声認識が処理される場合があります。運営者のサーバーが音声データそのものを受信または保存することはありません</li>
     <li><strong>アプリ設定およびゲーム進行情報</strong>：バッジ、バッジ獲得日、連続記録、トラベラーランクの最高アクティビティXP。端末に保存され、サインイン時にCloud Firestoreへ同期される場合があります</li>
-    <li><strong>広告関連情報（無料プラン）</strong>：Google AdMobがバナー広告またはリワード広告を配信する際、広告IDその他の端末識別情報を取得する場合があります。SkyLog Plusの利用中、またはリワード広告の視聴によりバナーが非表示となっている期間は、画面下部のバナー広告は表示されません。規制対象地域では、Google UMPを通じて広告に関する同意または拒否の選択が処理されます。必要な場合は、設定 ＞ サポート ＞ 広告のプライバシー設定から選択内容を変更できます</li>
+    <li><strong>広告関連情報（無料プラン）</strong>：Google AdMobは、広告の配信・効果測定・不正防止のため、IPアドレスから推定されるおおよその位置情報、アプリ内の操作、診断情報、端末識別子または広告IDを処理する場合があります。SkyLog Plusの利用中、またはリワード広告の視聴によりバナーが非表示となっている期間は、画面下部のバナー広告は表示されません。規制対象地域では、Google UMPを通じて広告に関する同意または拒否の選択が処理されます。必要な場合は、設定 ＞ サポート ＞ 広告のプライバシー設定から選択内容を変更できます</li>
   </ul>
 
   <h2>3. 権限および利用目的</h2>
   <ul>
     <li><strong>位置情報（フォアグラウンド・バックグラウンド）</strong>：あしあと機能における国、滞在日数、および取得時点の都市の記録に使用します。AndroidではWorkManagerにより約2時間ごとおよび日付の変更時に、iOSではSignificant Location Change、Visitモニタリング、およびBGAppRefreshにより位置情報の取得を試みます。利用者はいつでも追跡を停止し、または権限を取り消すことができます</li>
-    <li><strong>マイク・音声認識</strong>：フライト情報の音声入力に使用します。該当する入力画面でのみ使用し、音声認識はOSが提供する機能によって処理されます</li>
+    <li><strong>マイク・音声認識</strong>：フライト情報の音声入力に使用します。該当する入力画面でのみ使用し、端末、設定またはサービス提供者によっては、OSがネットワーク経由の音声認識サービスを使用する場合があります</li>
     <li><strong>インターネット接続</strong>：アカウントへのサインイン、クラウド同期、フライトの自動検索、および地図の読み込みに使用します</li>
     <li><strong>通知（任意）</strong>：過去の同時期のフライト、記録リマインダー、シェンゲン90/180ルールに関する警告、および年末まとめの通知に使用します。通知は端末内のデータに基づいて端末上で生成・予約され、サーバーからのプッシュ通知は使用しません</li>
     <li><strong>広告（無料プラン）</strong>：画面下部のバナー広告およびリワード広告の表示に使用します。無料プランでは基本の自動検索を月30回利用できます。対応するアプリのバージョンでは、リワード動画を最後まで視聴すると、当日中のバナー広告非表示または自動検索3回のいずれかの特典を受けられます。利用可能となる時点、1日あたりの上限その他の詳細条件は、アプリ画面に表示されます。SkyLog Plusの利用中はバナー広告が表示されません</li>
   </ul>
 
   <h2>4. 外部サービス</h2>
-  <p>運営者は、Google（Firebase Authentication、Cloud Firestore、Cloud Storage）、Mapbox（地図。Mapboxは同社のプライバシーポリシーに従って利用データを取得する場合があります）、RapidAPI AeroDataBox（フライトの自動検索）、Apple App Store / Google Play（SkyLog Plusの決済および購入情報）、ならびにGoogle AdMob（無料プランの広告）を利用します。各サービスのプライバシーポリシーその他の規約も適用されます。運営者は、個人情報を販売しません。</p>
+  <p>運営者は、Google（Firebase Authentication、Cloud Firestore、Cloud Storage）、Mapbox（地図。Mapboxは同社のプライバシーポリシーに従って利用データおよび位置情報に関連するテレメトリを処理する場合があります）、RapidAPI AeroDataBox（フライトの自動検索）、Apple App Store / Google Play（SkyLog Plusの決済および購入情報）、ならびにGoogle AdMob（無料プランの広告。広告の配信・分析・不正防止のため、IPアドレスから推定されるおおよその位置情報、アプリ内の操作、診断情報、端末識別子または広告IDを処理する場合があります）を利用します。各サービスのプライバシーポリシーその他の規約も適用されます。運営者は、個人情報を販売しません。</p>
 
   <h2>5. 保存および同期</h2>
   <p>フライト記録、アプリ設定およびゲーム進行情報は端末に保存され、サインイン時にFirebaseへ同期される場合があります。あしあと追跡中にオフラインで取得された位置座標は、逆ジオコーディングが完了するまで端末内に最長7日間保存されます。本アプリを起動してインターネットに接続すると、国および滞在日数の記録に変換され、7日を超えた座標は自動的に削除されます。サインインしていない状態で作成したデータは、原則として端末内にのみ保存されます。</p>
