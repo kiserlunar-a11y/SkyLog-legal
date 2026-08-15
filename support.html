@@ -14,10 +14,17 @@
     ul { padding-left: 1.25rem; }
     li { margin-bottom: 0.5rem; }
     .contact { background: #f5f8fc; border-left: 4px solid #1565c0; padding: 12px 16px; margin: 1rem 0; }
+    .languages { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 1.5rem; font-size: 0.95rem; }
   </style>
 </head>
 <body>
-  <h1>SkyLog 지원</h1>
+  <nav class="languages" aria-label="Language">
+    <a href="#support-ko">한국어</a>
+    <a href="#support-en">English</a>
+    <a href="#support-ja">日本語</a>
+  </nav>
+
+  <h1 id="support-ko">SkyLog 지원</h1>
   <p class="meta">비행 일지 · 방문국 자동 기록 · 여행 여권</p>
 
   <div class="contact">
@@ -27,10 +34,10 @@
 
   <h2>자주 묻는 질문</h2>
   <ul>
-    <li><strong>발자국이 자동으로 기록되지 않아요</strong> — 설정 &gt; SkyLog &gt; 위치에서 「항상」을 허용하고, 백그라운드 앱 새로고침을 켜 주세요. 오프라인에서 수집된 기록은 앱을 열고 인터넷에 연결되면 반영됩니다.</li>
+    <li><strong>발자국이 자동으로 기록되지 않아요</strong> — 먼저 발자국 탭에서 기록을 시작하고 위치를 「항상 허용」해 주세요. iOS는 설정 &gt; SkyLog에서 백그라운드 앱 새로고침을 확인하고, Android는 앱의 위치 권한과 필요 시 배터리 최적화 설정을 확인하세요. 오프라인 표본은 앱을 열고 인터넷에 연결되면 반영됩니다.</li>
     <li><strong>자동 조회 한도</strong> — 무료 기본 자동 조회는 월 30회입니다. 지원되는 앱 버전에서는 보상형 광고 1편을 끝까지 시청하면 3회가 추가되며, 이용 가능 시점·일일 한도 등 세부 조건은 앱 화면을 따릅니다. SkyLog Plus는 광고 없이 월 300회입니다.</li>
     <li><strong>구독 해지</strong> — App Store 또는 Google Play의 구독 설정에서 언제든 해지할 수 있습니다. 계정 삭제만으로는 구독이 해지되지 않습니다.</li>
-    <li><strong>기기 변경</strong> — 같은 계정(Google/Apple)으로 로그인하면 기록이 자동으로 동기화됩니다.</li>
+    <li><strong>기기 변경</strong> — 이전에 사용한 것과 같은 SkyLog 로그인 방식과 계정으로 로그인하고 인터넷에 연결하면 클라우드 기록이 복원됩니다. 복원이 끝나기 전에는 데이터 초기화 버튼이 잠시 비활성화될 수 있습니다.</li>
   </ul>
 
   <h2>문서</h2>
@@ -42,7 +49,7 @@
 
   <hr>
 
-  <h1>SkyLog Support</h1>
+  <h1 id="support-en">SkyLog Support</h1>
   <p class="meta">Flight log · automatic country tracking · travel passport</p>
 
   <div class="contact">
@@ -52,10 +59,10 @@
 
   <h2>FAQ</h2>
   <ul>
-    <li><strong>Footprints aren't recording automatically</strong> — Allow "Always" under Settings &gt; SkyLog &gt; Location and enable Background App Refresh. Offline samples are applied when you open the app with internet.</li>
+    <li><strong>Footprints aren't recording automatically</strong> — Start tracking in Footprints and allow location "Always." On iOS, check Background App Refresh under Settings &gt; SkyLog. On Android, check the App's location permission and, if needed, battery optimization. Offline samples are applied when you open the App with internet.</li>
     <li><strong>Auto-lookup limits</strong> — Free users receive 30 base auto-lookups per month. In supported App versions, completing one rewarded ad grants 3 additional auto-lookups; availability, timing, daily limits, and other conditions are shown in the App. SkyLog Plus provides 300 per month without rewarded ads.</li>
     <li><strong>Cancel subscription</strong> — Cancel anytime in your App Store or Google Play subscription settings. Deleting your account does not cancel an active subscription.</li>
-    <li><strong>New device</strong> — Sign in with the same Google/Apple account and your records sync automatically.</li>
+    <li><strong>New device</strong> — Sign in using the same SkyLog sign-in method and account as before, then connect to the internet to restore cloud records. Data-reset controls may stay disabled until verification finishes.</li>
   </ul>
 
   <h2>Documents</h2>
@@ -63,6 +70,31 @@
     <li><a href="privacy.html">Privacy Policy</a></li>
     <li><a href="terms.html">Terms of Service</a></li>
     <li><a href="delete-account.html">Account &amp; Data Deletion</a></li>
+  </ul>
+
+  <hr>
+
+  <h1 id="support-ja">SkyLog サポート</h1>
+  <p class="meta">フライト記録 · 訪問国の自動記録 · トラベルパスポート</p>
+
+  <div class="contact">
+    <strong>お問い合わせ</strong>：<a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a><br>
+    通常1〜2営業日以内に返信します。
+  </div>
+
+  <h2>よくある質問</h2>
+  <ul>
+    <li><strong>あしあとが自動記録されません</strong> — あしあとタブで記録を開始し、位置情報を「常に許可」にしてください。iOSでは設定 &gt; SkyLogの「Appのバックグラウンド更新」を、Androidでは本アプリの位置情報権限と、必要に応じてバッテリー最適化を確認してください。オフラインのサンプルは、本アプリを開いてインターネットへ接続すると反映されます。</li>
+    <li><strong>自動検索の上限</strong> — 無料プランの基本上限は月30回です。対応バージョンでは、リワード広告を最後まで視聴すると3回追加されます。利用時期、1日あたりの上限その他の条件はアプリ画面に表示されます。SkyLog Plusは広告なしで月300回です。</li>
+    <li><strong>サブスクリプションの解約</strong> — App StoreまたはGoogle Playのサブスクリプション設定からいつでも解約できます。SkyLogアカウントを削除しても自動的には解約されません。</li>
+    <li><strong>新しい端末</strong> — 以前と同じSkyLogのサインイン方法・アカウントでサインインし、インターネットへ接続するとクラウド記録が復元されます。確認が完了するまでデータ初期化ボタンが一時的に無効になる場合があります。</li>
+  </ul>
+
+  <h2>関連文書</h2>
+  <ul>
+    <li><a href="privacy.html">プライバシーポリシー</a></li>
+    <li><a href="terms.html">利用規約</a></li>
+    <li><a href="delete-account.html">アカウントおよびデータの削除</a></li>
   </ul>
 </body>
 </html>

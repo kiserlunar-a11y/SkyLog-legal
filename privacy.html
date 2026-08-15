@@ -23,7 +23,7 @@
   </nav>
 
   <h1 id="privacy-ko">개인정보 처리방침</h1>
-  <p class="meta">SkyLog · 최종 업데이트: 2026-08-14 · 문의: <a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
+  <p class="meta">SkyLog · 최종 업데이트: 2026-08-15 · 문의: <a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
 
   <h2>1. 개요</h2>
   <p>SkyLog(이하 "앱")은 여행·비행 기록 서비스를 제공합니다. 본 방침은 앱 운영자 웨이포인트 코드(Waypoint Code)(이하 "운영자")가 수집·이용·보관·삭제하는 개인정보와 권리에 대해 설명합니다.</p>
@@ -38,13 +38,15 @@
         <li><strong>Android</strong>: 앱 사용 중 약 500m 이동 시, 앱 미실행 시 <strong>약 2시간마다</strong>(정확한 시각 보장 없음) 및 <strong>날짜 변경(자정)</strong> 시 위치 1회 수집 시도. GPS·네트워크 실패 시 마지막으로 알던 국가로 체류일을 보충할 수 있음</li>
         <li><strong>iOS</strong>: 앱 미실행 포함 약 500m 이상 이동·방문 도착(Visit) 시 수집될 수 있으며, 자정 및 약 08·14·22시경(정확한 시각 보장 없음) 백그라운드 갱신을 시도합니다. GPS·네트워크 실패 시 마지막으로 알던 국가로 체류일을 보충할 수 있음</li>
         <li>발자국 탭 <strong>「지금 갱신」</strong>으로 수동 기록 가능</li>
-        <li>홈 화면 위젯은 체류 요약 표시(위젯 자체는 위치를 수집하지 않음)</li>
-        <li><strong>오프라인</strong>: 위치 좌표를 기기에 최대 7일간 임시 보관 후, 앱 실행·네트워크 연결 시 국가·체류일로 변환·반영(7일 초과분 자동 삭제)</li>
+        <li>사용자가 추가한 홈 화면·잠금 화면 위젯은 현재 여행·체류일·쉥겐 90/180 요약을 표시할 수 있음(위젯 자체는 위치를 수집하지 않으며, 표시 내용은 기기 잠금 화면 설정에 따라 주변 사람에게 보일 수 있음)</li>
+        <li><strong>오프라인</strong>: 위치 좌표를 앱의 기기 전용 저장공간에 최대 7일간 임시 보관 후, 앱 실행·네트워크 연결 시 국가·체류일로 변환·반영(7일 초과분 자동 삭제). 원시 좌표는 SkyLog의 Firebase 클라우드에 업로드하지 않음</li>
       </ul>
       체류일의 핵심은 <strong>국가별 방문 일수</strong>이며, 도시는 수집 시점 기준으로 기록됩니다.
     </li>
     <li><strong>음성 입력(선택)</strong>: 기기 OS 또는 OS가 선택한 음성 인식 제공자가 변환한 텍스트. 기기·설정·제공자에 따라 네트워크 음성 인식 서비스가 사용될 수 있으며, 운영자 서버는 음성 원본을 수신하거나 저장하지 않음</li>
-    <li><strong>앱 설정·게임 진행 정보</strong>: 배지, 배지 획득일, 연속 출석, 여행자 등급 최고 활동 XP. 기기에 저장되며 로그인 시 Cloud Firestore에 동기화될 수 있음</li>
+    <li><strong>앱 설정·게임 진행 정보</strong>: 발자국 목표 모드, 배지, 배지 획득일, 연속 출석, 여행자 등급 최고 활동 XP. 기기에 저장되며 일부는 로그인 시 Cloud Firestore에 동기화될 수 있음</li>
+    <li><strong>구독 정보</strong>: SkyLog Plus 상품, 플랫폼, 활성 상태, 만료 시각, 스토어 거래·구매 식별자. 결제 카드 정보는 운영자가 수집하지 않으며 App Store 또는 Google Play가 처리함</li>
+    <li><strong>고객지원 정보</strong>: 이메일로 문의할 때 이용자가 제공한 이메일 주소, 문의 내용 및 문제 해결에 필요한 계정 정보</li>
     <li><strong>광고(무료 이용 시)</strong>: Google AdMob이 광고 제공·분석·사기 방지를 위해 IP 주소에서 추정한 대략적 위치, 앱 상호작용, 진단 정보, 기기 식별자 또는 광고 ID를 처리할 수 있음. SkyLog Plus 구독 또는 보상형 광고 시청으로 배너가 숨겨진 기간에는 <strong>하단 배너 광고를 표시하지 않음</strong>. 규제 적용 지역에서는 Google UMP를 통해 광고 동의·거부 선택을 처리하며, 필요한 경우 설정 &gt; 지원 &gt; 광고 개인정보 설정에서 선택을 변경할 수 있음</li>
   </ul>
 
@@ -54,19 +56,20 @@
     <li><strong>배터리 최적화(Android, 선택)</strong>: 백그라운드 기록 신뢰성을 위해 배터리 최적화 예외 안내를 제공할 수 있음(사용자가 설정에서 선택)</li>
     <li><strong>백그라운드 기록 안내(iOS, 선택)</strong>: 「항상」 위치·백그라운드 앱 새로고침 설정 안내를 제공할 수 있음(사용자가 설정에서 선택)</li>
     <li><strong>마이크·음성 인식</strong>: 비행 정보 음성 입력(해당 화면에서만). 기기·설정·제공자에 따라 OS가 네트워크 음성 인식 서비스를 사용할 수 있음</li>
+    <li><strong>사진·파일(선택)</strong>: 여행 여권 프로필 사진 선택, 여권·연간 리캡 이미지 저장, 사용자가 선택한 비행 기록 파일 가져오기 및 내보내기. 내보낸 파일은 사용자가 선택한 OS 공유 대상에 전달됨</li>
     <li><strong>인터넷</strong>: 로그인·동기화, 비행 자동 조회, 지도</li>
     <li><strong>알림(선택)</strong>: 「알림 받기」를 켜면 여행 기록 재방문 안내·이맘때 비행 추억·연말 리캡이 자동으로 예약됨. 쉥겐 90/180 알림은 별도로 선택할 수 있으며, 발자국 기록을 기준으로 쉥겐 체류 감지·잔여 10·5·1일·90일 도달 시점을 안내함. 모든 알림은 기기 내 데이터로 기기에서 생성·예약되며(서버 푸시 없음), 일반 알림은 예약 당시 현지 시각 기준 22:00~08:00를 피해 예약함. 야간에 감지된 쉥겐 알림은 08:00 이후로 미뤄지며, 쉥겐 안내는 SkyLog 기록에 따른 추정치로 공식 출입국 기록이나 법률 판단을 대신하지 않음</li>
     <li><strong>광고(무료)</strong>: 하단 배너·보상형 광고. 무료 기본 자동 조회는 월 30회이며, 지원되는 앱 버전에서는 동영상 시청 시 오늘 하루 배너 숨김 또는 자동 조회 3회 지급이 가능함. 이용 가능 시점·일일 한도 등 세부 조건은 앱 화면을 따름. Plus 구독 시 배너 미표시</li>
   </ul>
 
   <h2>4. 제3자 서비스</h2>
-  <p>Google(Firebase Authentication, Cloud Firestore, Cloud Storage), Mapbox(지도 — 지도 표시 시 Mapbox가 자체 개인정보 처리방침에 따라 사용 데이터와 위치 관련 원격 측정 데이터를 처리할 수 있음), RapidAPI AeroDataBox(비행 자동 조회), Apple App Store / Google Play(SkyLog Plus 구독 결제·영수증; 결제 정보는 스토어가 처리), <strong>Google AdMob</strong>(무료 이용 시 배너·보상형 광고 — IP 주소에서 추정한 대략적 위치, 앱 상호작용, 진단 정보, 기기 식별자 또는 광고 ID를 광고 제공·분석·사기 방지 목적으로 처리할 수 있음). 운영자는 개인정보를 판매하지 않습니다.</p>
+  <p>Google(Firebase Authentication, Cloud Firestore, Cloud Storage, Cloud Functions 및 Google 로그인), Apple 로그인, Mapbox(지도 — 지도 표시 시 Mapbox가 자체 개인정보 처리방침에 따라 사용 데이터와 위치 관련 원격 측정 데이터를 처리할 수 있음), 기기 OS의 Apple/Google 역지오코딩 서비스(원시 좌표를 국가·도시로 변환), RapidAPI AeroDataBox(사용자가 조회한 편명·날짜와 인터넷 연결에 필요한 IP 주소를 처리할 수 있음), Apple App Store / Google Play(SkyLog Plus 구독 결제·영수증·거래 식별자; 결제 카드 정보는 스토어가 처리), <strong>Google AdMob 및 UMP</strong>(무료 이용 시 광고·동의 처리 — IP 주소에서 추정한 대략적 위치, 앱 상호작용, 진단 정보, 기기 식별자 또는 광고 ID를 광고 제공·분석·사기 방지 목적으로 처리할 수 있음)를 이용합니다. 운영자는 관련 약관과 법령에 따라 제3자 서비스가 본 방침에 부합하는 수준으로 개인정보를 보호하도록 요구하며, 개인정보를 판매하지 않습니다.</p>
 
   <h2>5. 보관 및 동기화</h2>
-  <p>비행 기록, 앱 설정 및 게임 진행 정보는 기기에 저장되며, 로그인 시 Firebase에 동기화될 수 있습니다. 발자국 추적 중 오프라인으로 수집된 위치 좌표는 역지오코딩 전까지 기기에 최대 7일간 보관됩니다. 앱을 실행하고 인터넷이 연결되면 국가·체류일 기록으로 변환하며, 7일이 지난 좌표는 자동으로 삭제합니다. 로그인하지 않은 상태의 데이터는 원칙적으로 기기에만 저장됩니다.</p>
+  <p>비행 기록, 국가·도시·체류일로 변환된 발자국 기록, 발자국 목표 모드, 여권 프로필, 앱 설정 일부 및 게임 진행 정보는 앱의 기기 전용 저장공간에 저장되며 로그인 시 Firebase에 동기화될 수 있습니다. 발자국 추적 중 오프라인으로 수집된 원시 위치 좌표는 역지오코딩 전까지 기기에만 최대 7일간 보관되고 SkyLog의 Firebase에는 업로드되지 않습니다. 좌표는 기기 OS의 역지오코딩 서비스에 의해 국가·도시·체류일 기록으로 변환될 수 있으며, 7일이 지난 원시 좌표는 자동 삭제됩니다. 안전한 계정 전환과 미동기화 기록 보존을 위해 로그아웃 후에도 계정별 로컬 사본이 앱 전용 저장공간에 남을 수 있으며, 데이터 초기화·계정 삭제 또는 앱 제거로 지울 수 있습니다. 이용자가 내보내거나 공유한 파일은 선택한 앱·저장 위치의 정책에 따릅니다.</p>
 
   <h2>6. 보관 기간 및 삭제</h2>
-  <p>계정과 클라우드 동기화 데이터는 계정이 유지되는 동안 보관됩니다. 설정 &gt; 계정 삭제 및 탈퇴로 삭제를 요청하면 계정 접근이 즉시 종료되고 기기 데이터가 지워지며, 클라우드 데이터 삭제는 백그라운드에서 일반적으로 24시간 이내 완료됩니다(서비스 장애 시 더 걸릴 수 있음). 법령상 보관 의무가 있는 정보는 해당 기간 동안 별도로 보관될 수 있습니다. <strong>계정 삭제만으로 SkyLog Plus 구독이 자동 해지되지 않으며</strong>, Google Play 또는 App Store의 구독 설정에서 별도로 해지해야 합니다. 데이터만 삭제하고 계정을 유지하는 방법은 <a href="delete-account.html">계정·데이터 삭제 안내</a>를 참고하세요.</p>
+  <p>계정과 클라우드 동기화 데이터는 계정이 유지되는 동안 보관됩니다. 설정 &gt; 계정 삭제 및 탈퇴로 삭제를 요청하면 계정 접근을 즉시 차단하고 해당 기기의 데이터 정리를 시작하며, 클라우드 데이터 삭제는 백그라운드에서 일반적으로 24시간 이내 완료됩니다. 서비스 장애 시 서버가 자동으로 재시도하여 더 걸릴 수 있습니다. 삭제 직전 요청이 데이터를 다시 만드는 것을 막기 위해 삭제 완료 후 계정 UID와 삭제 상태만 담은 기술적 보호 기록을 약 48시간 보관한 뒤 자동 삭제합니다. 고객지원 기록이나 법령상 보관 의무가 있는 정보는 문제 해결 또는 법정 기간 동안 제한적으로 보관될 수 있습니다. <strong>계정 삭제만으로 SkyLog Plus 구독이 자동 해지되지 않으며</strong>, Google Play 또는 App Store의 구독 설정에서 별도로 해지해야 합니다. 데이터만 삭제하고 계정을 유지하는 방법은 <a href="delete-account.html">계정·데이터 삭제 안내</a>를 참고하세요.</p>
 
   <h2>7. 이용자 권리</h2>
   <p>발자국 추적 중지, 로그아웃, 데이터 초기화, 계정 삭제를 할 수 있습니다. 규제 적용 지역에서는 설정 &gt; 지원 &gt; 광고 개인정보 설정을 통해 광고 선택을 변경할 수 있습니다. 문의: <a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
@@ -80,7 +83,7 @@
   <hr>
 
   <h1 id="privacy-en">Privacy Policy (English)</h1>
-  <p class="meta">Last updated: 2026-08-14 · Contact: <a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
+  <p class="meta">Last updated: 2026-08-15 · Contact: <a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
 
   <h2>1. Overview</h2>
   <p>SkyLog ("the App") is a travel and flight journal. This policy explains what personal data Waypoint Code ("we", the operator) collects, uses, stores, and deletes, and your rights. By using the App you agree to this policy.</p>
@@ -95,27 +98,29 @@
         <li><strong>Android</strong>: ~500 m moves while the app runs; about every 2 hours (not exact timing) and on date change when the app is not open. If GPS/network fails, the last known country may be used to keep stay days up to date</li>
         <li><strong>iOS</strong>: significant moves (~500 m) and visit arrivals, including in the background; background refresh attempts around local midnight and about 8:00, 14:00, and 22:00 (not exact timing). If GPS/network fails, the last known country may be used to keep stay days up to date</li>
         <li>Manual <strong>Refresh now</strong> on the Footprints tab</li>
-        <li>Home-screen widgets show stay summaries (widgets do not collect location)</li>
-        <li><strong>Offline</strong>: coordinates may be stored on-device for up to 7 days, then converted when you open the App with network (older entries deleted)</li>
+        <li>Home- and lock-screen widgets you add may show current journey, stay-day, and Schengen 90/180 summaries. Widgets do not collect location themselves, but their content may be visible to people nearby depending on your lock-screen settings</li>
+        <li><strong>Offline</strong>: coordinates may be stored in the App's private on-device storage for up to 7 days, then converted when you open the App with network (older entries deleted). Raw coordinates are not uploaded to SkyLog's Firebase cloud</li>
       </ul>
       Country stay days are primary; cities reflect sample points.
     </li>
     <li>Optional voice-to-text processed by the device OS or its speech-recognition provider. Depending on the device, settings, and provider, a network speech-recognition service may be used. Our servers do not receive or store raw audio</li>
-    <li>App preferences and gamification progress (badges, badge dates, streaks, and peak activity XP), stored on device and optionally synced to Cloud Firestore when signed in</li>
+    <li>App preferences and gamification progress (footprint goal mode, badges, badge dates, streaks, and peak activity XP), stored on device and partly synced to Cloud Firestore when signed in</li>
+    <li><strong>Subscription information</strong>: SkyLog Plus product, platform, status, expiration, and store transaction or purchase identifiers. We do not collect payment-card details; the App Store or Google Play processes them</li>
+    <li><strong>Support information</strong>: your email address, message, and account details you choose to provide when requesting support</li>
     <li><strong>Ads (free tier)</strong>: Google AdMob may process IP-derived approximate location, app interactions, diagnostics, and device or advertising identifiers to serve and measure ads and prevent fraud. No bottom banner while Plus is active or during a rewarded ad-free period for the rest of today. In regulated regions, Google UMP processes advertising consent or opt-out choices; where required, you can change your choice in Settings &gt; Support &gt; Ad privacy choices</li>
   </ul>
 
   <h2>3. Permissions</h2>
-  <p>Location (foreground &amp; background), optional microphone/speech, internet. Speech recognition is handled by the device OS or its provider and may use a network service depending on the device, settings, and provider. On Android, system background work (WorkManager) attempts periodic (~2 h, not exact timing) and date-change footprint samples while tracking is on; we may optionally guide you to exempt the App from battery optimization. On iOS, Significant Location Change, Visit monitoring, and BGAppRefresh (midnight and about 8:00, 14:00, 22:00 — not exact timing) attempt samples; we may optionally guide you to enable Always location and Background App Refresh. When Notifications is enabled, occasional travel check-ins, flight memories, and the year-end recap are scheduled automatically. Schengen 90/180 alerts can be controlled separately and use Footprint records to notify you of a detected Schengen stay, 10, 5, or 1 day remaining, and reaching 90 recorded days. All notifications are generated and scheduled on-device from on-device data — no server push. General notifications are scheduled outside 22:00–08:00 based on local time when scheduled; Schengen events detected overnight are deferred until after 08:00. Schengen alerts are estimates based on SkyLog records and do not replace official immigration records or legal advice. Free users receive 30 base auto-lookups per month. In supported App versions, rewarded video may be used to hide the banner for the rest of today or receive 3 auto-lookups; availability, timing, daily limits, and other conditions are shown in the App. Plus removes banner ads.</p>
+  <p>Location (foreground &amp; background), optional microphone/speech, optional photos/files, notifications, and internet. Photos/files are used only when you choose a passport profile photo, save a passport or recap image, import a selected flight file, or export/share data; exported files go to the OS destination you choose. Speech recognition is handled by the device OS or its provider and may use a network service depending on the device, settings, and provider. On Android, system background work (WorkManager) attempts periodic (~2 h, not exact timing) and date-change footprint samples while tracking is on; we may optionally guide you to exempt the App from battery optimization. On iOS, Significant Location Change, Visit monitoring, and BGAppRefresh (midnight and about 8:00, 14:00, 22:00 — not exact timing) attempt samples; we may optionally guide you to enable Always location and Background App Refresh. When Notifications is enabled, occasional travel check-ins, flight memories, and the year-end recap are scheduled automatically. Schengen 90/180 alerts can be controlled separately and use Footprint records to notify you of a detected Schengen stay, 10, 5, or 1 day remaining, and reaching 90 recorded days. All notifications are generated and scheduled on-device from on-device data — no server push. General notifications are scheduled outside 22:00–08:00 based on local time when scheduled; Schengen events detected overnight are deferred until after 08:00. Schengen alerts are estimates based on SkyLog records and do not replace official immigration records or legal advice. Free users receive 30 base auto-lookups per month. In supported App versions, rewarded video may be used to hide the banner for the rest of today or receive 3 auto-lookups; availability, timing, daily limits, and other conditions are shown in the App. Plus removes banner ads.</p>
 
   <h2>4. Third-party services</h2>
-  <p>We use Google Firebase Authentication, Cloud Firestore, and Cloud Storage; Mapbox for maps (Mapbox may process usage data and location-related telemetry under its own privacy policy); RapidAPI AeroDataBox for flight auto-lookup; Apple App Store and Google Play for SkyLog Plus billing and purchase information; and <strong>Google AdMob</strong> for ads on the free tier (AdMob may process IP-derived approximate location, app interactions, diagnostics, and device or advertising identifiers for ad delivery, analytics, and fraud prevention). Their respective privacy policies and terms may apply. We do not sell personal data.</p>
+  <p>We use Google Firebase Authentication, Cloud Firestore, Cloud Storage, Cloud Functions, and Google Sign-In; Sign in with Apple; Mapbox for maps (Mapbox may process usage data and location-related telemetry under its own privacy policy); Apple/Google device geocoding services to convert raw coordinates into a country and city; RapidAPI AeroDataBox for flight auto-lookup (it may process the flight number and date you request and the IP address needed for the connection); Apple App Store and Google Play for SkyLog Plus billing, receipts, and transaction identifiers; and <strong>Google AdMob and UMP</strong> for free-tier ads and consent choices (they may process IP-derived approximate location, app interactions, diagnostics, and device or advertising identifiers for ad delivery, analytics, and fraud prevention). We require third-party providers, under applicable terms and law, to protect personal data consistently with this policy. We do not sell personal data.</p>
 
   <h2>5. Storage and sync</h2>
-  <p>Flight records, app preferences, and gamification progress are stored on your device and may sync to Firebase while you are signed in. While footprint tracking is on, location coordinates collected offline may be stored on-device for up to 7 days before reverse geocoding. They are converted into country and stay-day records when you open the App with internet, and coordinates older than 7 days are deleted automatically. Data created while signed out is generally stored only on your device.</p>
+  <p>Flights; footprint records converted into country, city, and stay days; footprint goal mode; passport profile; some app settings; and gamification progress are stored in the App's private on-device storage and may sync to Firebase while you are signed in. Raw offline location coordinates are kept only on-device for up to 7 days before reverse geocoding and are not uploaded to SkyLog's Firebase. The device OS geocoding service may process them to produce country/city records, and coordinates older than 7 days are deleted automatically. To preserve unsynced changes and switch accounts safely, account-scoped local copies may remain in private app storage after sign-out; you can remove them by resetting data, deleting the account, or uninstalling the App. Files you export or share are governed by the destination you choose.</p>
 
   <h2>6. Retention and deletion</h2>
-  <p>Your account and synced cloud data are retained while your account remains active. When you request account deletion in Settings, account access ends immediately, on-device data is cleared, and cloud deletion normally finishes in the background within 24 hours, although service disruptions may take longer. Information that must be retained by law may be kept separately for the required period. <strong>Deleting your account does not automatically cancel an active SkyLog Plus subscription</strong>; cancel it in the applicable store's subscription settings. See <a href="delete-account.html">account and data deletion</a> to delete data while keeping your account.</p>
+  <p>Your account and synced cloud data are retained while your account remains active. When an account-deletion request is accepted in Settings, access is blocked immediately, cleanup starts on that device, and cloud deletion normally finishes in the background within 24 hours. The server retries automatically after service disruptions, so completion may take longer. To prevent requests already in flight from recreating data, a technical protection record containing only the account UID and deletion status is kept for about 48 hours after deletion completes and is then removed automatically. Support correspondence and information required by law may be retained only as needed or for the required period. <strong>Deleting your account does not automatically cancel an active SkyLog Plus subscription</strong>; cancel it in the applicable store's subscription settings. See <a href="delete-account.html">account and data deletion</a> to delete data while keeping your account.</p>
 
   <h2>7. Your rights</h2>
   <p>You may stop footprint tracking, sign out, reset data, or delete your account at any time. In regulated regions, you can change advertising choices in Settings &gt; Support &gt; Ad privacy choices. Contact: <a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
@@ -129,7 +134,7 @@
   <hr>
 
   <h1 id="privacy-ja">プライバシーポリシー（日本語）</h1>
-  <p class="meta">SkyLog · 最終更新日：2026-08-14 · お問い合わせ：<a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
+  <p class="meta">SkyLog · 最終更新日：2026-08-15 · お問い合わせ：<a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
 
   <h2>1. 概要</h2>
   <p>SkyLog（以下「本アプリ」）は、旅行およびフライトの記録サービスです。本ポリシーは、本アプリの運営者であるWaypoint Code（以下「運営者」）が取り扱う個人情報、その利用目的、保存・削除方法、および利用者の権利について説明するものです。本アプリを利用することにより、本ポリシーに同意したものとみなされます。</p>
@@ -144,13 +149,15 @@
         <li><strong>Android</strong>：本アプリの使用中に約500m移動したとき、および本アプリを開いていないときは約2時間ごと（正確な時刻は保証されません）または日付の変更時（午前0時）に、位置情報の取得を1回試みます。GPSまたはネットワークによる取得に失敗した場合、最後に確認された国を使用して滞在日数を更新することがあります</li>
         <li><strong>iOS</strong>：本アプリを開いていないときを含め、約500m以上の大きな移動または訪問先への到着（Visit）を検知したときに取得される場合があります。また、午前0時ならびに8時、14時、22時頃（正確な時刻は保証されません）にバックグラウンド更新を試みます。GPSまたはネットワークによる取得に失敗した場合、最後に確認された国を使用して滞在日数を更新することがあります</li>
         <li>あしあとタブの「今すぐ更新」から手動で記録できます</li>
-        <li>ホーム画面ウィジェットは滞在情報の概要のみを表示し、ウィジェット自体が位置情報を取得することはありません</li>
-        <li><strong>オフライン時</strong>：位置座標は端末内に最長7日間一時保存され、本アプリを起動してインターネットに接続した際に国・滞在日数へ変換されます。7日を超えた座標は自動的に削除されます</li>
+        <li>利用者が追加したホーム画面・ロック画面ウィジェットには、現在の旅行、滞在日数、シェンゲン90/180の概要が表示される場合があります。ウィジェット自体は位置情報を取得しませんが、ロック画面の設定によっては周囲の人から表示内容が見える場合があります</li>
+        <li><strong>オフライン時</strong>：位置座標は本アプリ専用の端末内領域に最長7日間一時保存され、ネットワーク接続時に国・滞在日数へ変換されます。7日を超えた座標は自動的に削除され、元の座標はSkyLogのFirebaseクラウドへアップロードされません</li>
       </ul>
       滞在日数は国別の訪問日数を中心に記録し、都市は位置情報を取得した時点の地点に基づいて記録されます。
     </li>
     <li><strong>音声入力（任意）</strong>：端末のOSまたはOSが選択した音声認識サービスによって変換されたテキスト。端末、設定またはサービス提供者によっては、ネットワーク経由で音声認識が処理される場合があります。運営者のサーバーが音声データそのものを受信または保存することはありません</li>
-    <li><strong>アプリ設定およびゲーム進行情報</strong>：バッジ、バッジ獲得日、連続記録、トラベラーランクの最高アクティビティXP。端末に保存され、サインイン時にCloud Firestoreへ同期される場合があります</li>
+    <li><strong>アプリ設定およびゲーム進行情報</strong>：あしあと目標モード、バッジ、バッジ獲得日、連続記録、トラベラーランクの最高アクティビティXP。端末に保存され、一部はサインイン時にCloud Firestoreへ同期される場合があります</li>
+    <li><strong>サブスクリプション情報</strong>：SkyLog Plusの商品、プラットフォーム、有効状態、有効期限、ストアの取引・購入識別子。決済カード情報は運営者が取得せず、App StoreまたはGoogle Playが処理します</li>
+    <li><strong>サポート情報</strong>：メールでのお問い合わせ時に利用者が提供するメールアドレス、問い合わせ内容および問題解決に必要なアカウント情報</li>
     <li><strong>広告関連情報（無料プラン）</strong>：Google AdMobは、広告の配信・効果測定・不正防止のため、IPアドレスから推定されるおおよその位置情報、アプリ内の操作、診断情報、端末識別子または広告IDを処理する場合があります。SkyLog Plusの利用中、またはリワード広告の視聴によりバナーが非表示となっている期間は、画面下部のバナー広告は表示されません。規制対象地域では、Google UMPを通じて広告に関する同意または拒否の選択が処理されます。必要な場合は、設定 ＞ サポート ＞ 広告のプライバシー設定から選択内容を変更できます</li>
   </ul>
 
@@ -158,19 +165,20 @@
   <ul>
     <li><strong>位置情報（フォアグラウンド・バックグラウンド）</strong>：あしあと機能における国、滞在日数、および取得時点の都市の記録に使用します。AndroidではWorkManagerにより約2時間ごとおよび日付の変更時に、iOSではSignificant Location Change、Visitモニタリング、およびBGAppRefreshにより位置情報の取得を試みます。利用者はいつでも追跡を停止し、または権限を取り消すことができます</li>
     <li><strong>マイク・音声認識</strong>：フライト情報の音声入力に使用します。該当する入力画面でのみ使用し、端末、設定またはサービス提供者によっては、OSがネットワーク経由の音声認識サービスを使用する場合があります</li>
+    <li><strong>写真・ファイル（任意）</strong>：トラベルパスポートのプロフィール写真の選択、パスポート・年間まとめ画像の保存、利用者が選択したフライト記録ファイルの読み込み・書き出しに使用します。書き出したファイルは、利用者が選択したOSの共有先へ渡されます</li>
     <li><strong>インターネット接続</strong>：アカウントへのサインイン、クラウド同期、フライトの自動検索、および地図の読み込みに使用します</li>
     <li><strong>通知（任意）</strong>：「通知を受け取る」をオンにすると、旅の振り返り、この時期のフライトの思い出、年間まとめが自動的に予約されます。シェンゲン90/180通知は別にオン・オフでき、あしあと記録に基づいてシェンゲン滞在の検出、残り10・5・1日、および90日に達した時点をお知らせします。通知はすべて端末内のデータに基づき端末上で生成・予約され、サーバーからのプッシュ通知は使用しません。一般通知は予約時の現地時間22:00〜08:00を避けて設定され、夜間に検出されたシェンゲン通知は08:00以降に延期されます。シェンゲンの案内はSkyLogの記録に基づく推定であり、公式な出入国記録や法的判断に代わるものではありません</li>
     <li><strong>広告（無料プラン）</strong>：画面下部のバナー広告およびリワード広告の表示に使用します。無料プランでは基本の自動検索を月30回利用できます。対応するアプリのバージョンでは、リワード動画を最後まで視聴すると、当日中のバナー広告非表示または自動検索3回のいずれかの特典を受けられます。利用可能となる時点、1日あたりの上限その他の詳細条件は、アプリ画面に表示されます。SkyLog Plusの利用中はバナー広告が表示されません</li>
   </ul>
 
   <h2>4. 外部サービス</h2>
-  <p>運営者は、Google（Firebase Authentication、Cloud Firestore、Cloud Storage）、Mapbox（地図。Mapboxは同社のプライバシーポリシーに従って利用データおよび位置情報に関連するテレメトリを処理する場合があります）、RapidAPI AeroDataBox（フライトの自動検索）、Apple App Store / Google Play（SkyLog Plusの決済および購入情報）、ならびにGoogle AdMob（無料プランの広告。広告の配信・分析・不正防止のため、IPアドレスから推定されるおおよその位置情報、アプリ内の操作、診断情報、端末識別子または広告IDを処理する場合があります）を利用します。各サービスのプライバシーポリシーその他の規約も適用されます。運営者は、個人情報を販売しません。</p>
+  <p>運営者は、Google（Firebase Authentication、Cloud Firestore、Cloud Storage、Cloud FunctionsおよびGoogleログイン）、Appleでサインイン、Mapbox（地図。利用データおよび位置情報に関連するテレメトリを処理する場合があります）、端末OSのApple/Google逆ジオコーディングサービス（元の座標を国・都市へ変換）、RapidAPI AeroDataBox（検索した便名・日付および通信に必要なIPアドレスを処理する場合があります）、Apple App Store / Google Play（SkyLog Plusの決済、レシートおよび取引識別子）、ならびにGoogle AdMob・UMP（無料プランの広告および同意管理。おおよその位置情報、アプリ内の操作、診断情報、端末識別子または広告IDを処理する場合があります）を利用します。運営者は、適用される規約および法令に基づき、外部サービスに本ポリシーと整合する水準で個人情報を保護することを求めます。運営者は個人情報を販売しません。</p>
 
   <h2>5. 保存および同期</h2>
-  <p>フライト記録、アプリ設定およびゲーム進行情報は端末に保存され、サインイン時にFirebaseへ同期される場合があります。あしあと追跡中にオフラインで取得された位置座標は、逆ジオコーディングが完了するまで端末内に最長7日間保存されます。本アプリを起動してインターネットに接続すると、国および滞在日数の記録に変換され、7日を超えた座標は自動的に削除されます。サインインしていない状態で作成したデータは、原則として端末内にのみ保存されます。</p>
+  <p>フライト記録、国・都市・滞在日数へ変換されたあしあと記録、あしあと目標モード、パスポートプロフィール、一部のアプリ設定およびゲーム進行情報は、本アプリ専用の端末内領域に保存され、サインイン時にFirebaseへ同期される場合があります。オフラインで取得された元の位置座標は逆ジオコーディングまで端末内にのみ最長7日間保存され、SkyLogのFirebaseへはアップロードされません。端末OSの逆ジオコーディングサービスが座標を国・都市の記録へ変換する場合があり、7日を超えた元の座標は自動的に削除されます。未同期の変更を保護し安全にアカウントを切り替えるため、サインアウト後もアカウント別のローカルコピーが本アプリ専用領域に残る場合があります。データの初期化、アカウントの削除または本アプリのアンインストールにより削除できます。書き出し・共有したファイルには、利用者が選択した保存先・共有先のポリシーが適用されます。</p>
 
   <h2>6. 保存期間および削除</h2>
-  <p>アカウントおよびクラウドへ同期されたデータは、アカウントが有効な間保存されます。設定からアカウント削除の申請が受け付けられると、アカウントへのアクセスは直ちに終了し、端末内のデータは消去されます。クラウドデータの削除は通常24時間以内に完了しますが、サービス障害が発生した場合はさらに時間を要することがあります。法令により保存が義務付けられる情報は、所定の期間、別途保存される場合があります。アカウントを削除してもSkyLog Plusのサブスクリプションは自動的に解約されません。App StoreまたはGoogle Playのサブスクリプション設定から別途解約してください。アカウントを維持したままデータのみを削除する方法については、<a href="delete-account.html">アカウントおよびデータの削除案内</a>をご確認ください。</p>
+  <p>アカウントおよびクラウドへ同期されたデータは、アカウントが有効な間保存されます。設定からアカウント削除の申請が受け付けられると、アカウントへのアクセスを直ちに遮断し、対象端末のデータ整理を開始します。クラウドデータの削除は通常24時間以内に完了しますが、サービス障害時はサーバーが自動的に再試行するため、さらに時間を要する場合があります。処理中のリクエストによるデータ再作成を防ぐため、削除完了後もアカウントUIDと削除状態のみを含む技術的な保護記録を約48時間保存し、その後自動削除します。サポート記録および法令により保存が必要な情報は、問題解決または所定の期間に限り保存する場合があります。アカウントを削除してもSkyLog Plusのサブスクリプションは自動的に解約されません。App StoreまたはGoogle Playのサブスクリプション設定から別途解約してください。アカウントを維持したままデータのみを削除する方法については、<a href="delete-account.html">アカウントおよびデータの削除案内</a>をご確認ください。</p>
 
   <h2>7. 利用者の権利</h2>
   <p>利用者は、いつでもあしあと追跡の停止、サインアウト、データの初期化、およびアカウントの削除を行うことができます。規制対象地域では、設定 ＞ サポート ＞ 広告のプライバシー設定から広告に関する選択を変更できます。お問い合わせ：<a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a></p>
