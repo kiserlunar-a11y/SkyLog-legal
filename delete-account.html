@@ -25,9 +25,9 @@
   </nav>
 
   <h1 id="delete-ko">SkyLog — 계정 및 데이터 삭제</h1>
-  <p class="meta">앱: <strong>SkyLog</strong> · 운영자 문의: <a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a> · 최종 업데이트: 2026-08-15</p>
+  <p class="meta">앱: <strong>SkyLog</strong> · 운영자 문의: <a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a> · 최종 업데이트: 2026-08-29</p>
 
-  <p>SkyLog 사용자는 <strong>앱 안에서 직접</strong> 데이터를 삭제할 수 있습니다. <strong>계정을 유지한 채</strong> 일부·전체 데이터만 지우거나, <strong>계정 탈퇴</strong>로 모든 데이터와 로그인을 함께 삭제할 수 있습니다.</p>
+  <p>SkyLog 사용자는 <strong>앱 안에서 직접</strong> 데이터를 삭제할 수 있습니다. SkyLog 계정을 유지한 채 일부 또는 모든 앱 데이터만 지우거나, SkyLog 계정·클라우드 데이터·기기 데이터를 삭제하고 SkyLog와의 로그인 연동을 해제할 수 있습니다. Google 또는 Apple 계정 자체는 삭제되지 않습니다.</p>
 
   <h2>① 데이터만 삭제 (계정 유지)</h2>
   <p>로그인·SkyLog 계정은 그대로 두고, 아래 항목만 지울 수 있습니다.</p>
@@ -41,16 +41,16 @@
   </div>
   <p>오래된 클라우드 기록이 빈 기기 데이터 위에 다시 복원되는 일을 막기 위해, 앱이 해당 데이터 영역의 최신 클라우드 상태를 확인하지 못한 동안에는 초기화 버튼이 일시적으로 비활성화될 수 있습니다. 초기화 결과는 Firebase에 반영되며, 반영을 확인하지 못하면 앱에서 재시도를 안내합니다. 계정 이메일·로그인 상태는 유지됩니다.</p>
 
-  <h2>② 계정 삭제 및 탈퇴 (계정 + 데이터 전체)</h2>
+  <h2>② 계정 및 데이터 삭제</h2>
   <div class="steps">
     <ol>
       <li>SkyLog 앱을 실행하고 Google 또는 Apple 계정으로 로그인합니다.</li>
       <li>하단 <strong>설정</strong> 탭으로 이동합니다.</li>
-      <li><strong>계정</strong> 섹션에서 <strong>계정 삭제 및 탈퇴</strong>를 선택합니다.</li>
+      <li><strong>계정</strong> 섹션에서 <strong>계정 및 데이터 삭제</strong>를 선택합니다.</li>
       <li>안내를 확인한 뒤 <strong>삭제</strong>를 탭합니다.</li>
       <li><strong>SkyLog Plus 구독 중이면</strong> 계정 삭제 후에도 구독이 자동 해지되지 않습니다. App Store 또는 Google Play의 구독 설정에서 별도로 해지해 주세요.</li>
       <li>Google 또는 Apple 계정 확인 화면이 나오면 기존 로그인 방식으로 재인증합니다.</li>
-      <li>요청이 접수되면 계정 접근이 즉시 차단되고 로그인 화면으로 돌아갑니다. 해당 기기의 데이터 정리가 즉시 시작되며, 실패한 로컬 정리는 다음 실행 때 재시도됩니다. 클라우드 데이터 삭제는 백그라운드에서 계속됩니다.</li>
+      <li>요청이 접수되면 계정 접근이 즉시 차단되고 로그인 화면으로 돌아갑니다. 해당 기기의 데이터 삭제 처리가 즉시 시작되며, 완료되지 않은 처리는 다음 실행 때 재시도됩니다. 클라우드 데이터 삭제는 백그라운드에서 계속됩니다.</li>
     </ol>
   </div>
 
@@ -59,7 +59,7 @@
     <li>Firebase Authentication 계정 (SkyLog 로그인 정보)</li>
     <li>클라우드에 저장된 비행 일지, 발자국, 여권·프로필 사진, 배지·통계 등 동기화 데이터</li>
     <li>SkyLog 계정과 SkyLog Plus 구매 식별자 사이의 연결 정보</li>
-    <li>해당 기기에 저장된 SkyLog 로컬 데이터</li>
+    <li>해당 기기의 SkyLog 계정별 로컬 기록(아래에 설명한 외부 저장 파일·임시 캐시 제외)</li>
     <li>Google 또는 Apple 로그인 연동 (SkyLog 앱과의 연결)</li>
   </ul>
 
@@ -67,11 +67,13 @@
   <ul>
     <li><strong>Google 또는 Apple 계정 자체</strong>는 삭제되지 않습니다. 해당 계정은 각 제공업체에서 별도로 관리합니다.</li>
     <li><strong>Google Play / App Store 구독</strong>은 계정 삭제만으로 자동 해지되지 않습니다. 각 스토어의 구독 설정에서 별도로 해지해야 합니다.</li>
+    <li>내보낸 기록, 여권·연간 리캡 이미지, 사진 앱이나 파일 앱에 저장한 여행 리와인드 영상처럼 <strong>SkyLog 밖에 저장한 파일</strong>은 자동으로 삭제되지 않습니다. 필요한 경우 해당 저장 위치에서 직접 삭제해야 합니다.</li>
+    <li>앱이 비정상 종료되며 남은 여행 리와인드 임시 영상은 계정 삭제 과정에서 직접 지워지지 않을 수 있습니다. 이 파일은 기기의 임시 저장공간에만 남으며 운영체제 정책에 따라 정리되거나, 다음 영상 생성 시 24시간이 지난 파일이 삭제됩니다. 즉시 지우려면 기기 설정에서 SkyLog 앱 데이터를 삭제하거나 앱을 제거해 주세요.</li>
     <li>클라우드 데이터 삭제는 일반적으로 24시간 이내 완료됩니다. 일시적인 서비스 장애가 있으면 더 걸릴 수 있으며, 서버가 자동으로 재시도합니다.</li>
-    <li>삭제 직전 처리 중이던 요청이 데이터를 다시 만드는 것을 막기 위해, 삭제 완료 후 계정 UID와 삭제 상태만 담은 기술적 보호 기록을 약 48시간 보관한 뒤 자동 삭제합니다.</li>
+    <li>삭제 직전 처리 중이던 요청이 데이터를 다시 만드는 것을 막기 위해, 삭제 완료 후 계정 UID, 삭제 상태, 처리 시각 및 재시도·요청 식별을 위한 최소 기술 정보를 약 48시간 보관한 뒤 자동 삭제합니다.</li>
     <li>다른 기기에 남아 있는 앱 전용 로컬 사본은 그 기기가 오프라인이면 원격으로 즉시 지울 수 없습니다. 해당 계정으로는 더 이상 클라우드에 접근할 수 없으며, 다른 기기에서 앱 데이터 삭제 또는 앱 제거로 로컬 사본을 지울 수 있습니다.</li>
     <li>법적 의무, 분쟁 대응, 보안·사기 방지를 위해 필요한 경우, 관련 법령이 허용하는 범위에서 일부 로그가 제한적으로 보관될 수 있습니다.</li>
-    <li>제3자(Mapbox, AeroDataBox 등)에 이미 전송된 요청 로그는 각 서비스의 정책에 따릅니다. SkyLog는 개인정보를 판매하지 않습니다.</li>
+    <li>Mapbox, AeroDataBox, Unity LevelPlay, ironSource Ads, Unity Ads, 연결된 광고 제공자, Google UMP, App Store 또는 Google Play 등 제3자 서비스가 보관하는 관련 기록에는 각 서비스의 정책이 적용됩니다. SkyLog는 개인정보를 판매하지 않습니다.</li>
   </ul>
 
   <h2>앱을 사용할 수 없을 때</h2>
@@ -82,7 +84,7 @@
   <hr>
 
   <h1 id="delete-en">SkyLog — Account &amp; Data Deletion (English)</h1>
-  <p class="meta">App: <strong>SkyLog</strong> · Contact: <a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a> · Last updated: 2026-08-15</p>
+  <p class="meta">App: <strong>SkyLog</strong> · Contact: <a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a> · Last updated: 2026-08-29</p>
 
   <p>You can delete data <strong>inside the app</strong>. You may erase <strong>some or all app data while keeping your account</strong>, or <strong>delete your account entirely</strong>.</p>
 
@@ -97,16 +99,16 @@
   </div>
   <p>To prevent older cloud records from being restored over an empty device, reset controls may be temporarily disabled until the App verifies the latest cloud state for the affected data. Reset changes are sent to Firebase; if confirmation fails, the App asks you to retry. Your login email and account are not deleted.</p>
 
-  <h2>② Delete account &amp; leave (account + all data)</h2>
+  <h2>② Delete your SkyLog account and data</h2>
   <div class="steps">
     <ol>
       <li>Open SkyLog and sign in with Google or Apple.</li>
       <li>Go to the bottom <strong>Settings</strong> tab.</li>
-      <li>Under <strong>Account</strong>, tap <strong>Delete account &amp; leave</strong>.</li>
+      <li>Under <strong>Account</strong>, tap <strong>Delete account</strong>.</li>
       <li>Confirm and tap <strong>Delete</strong>.</li>
       <li>If you have an active <strong>SkyLog Plus</strong> subscription, deleting your account does <strong>not</strong> cancel billing. Cancel separately in your store subscription settings.</li>
       <li>When prompted, re-authenticate using the same Google or Apple sign-in method.</li>
-      <li>Once the request is accepted, account access is blocked immediately and you return to the login screen. Cleanup starts on that device, and any failed local cleanup is retried on a later launch. Cloud deletion continues in the background.</li>
+      <li>Once the request is accepted, account access is blocked immediately and you return to the login screen. Deletion begins on that device, and any incomplete local deletion is retried on a later launch. Cloud deletion continues in the background.</li>
     </ol>
   </div>
 
@@ -115,7 +117,7 @@
     <li>Your Firebase Authentication account for SkyLog</li>
     <li>Cloud-stored flights, footprints, passport/profile photos, badges, and related sync data</li>
     <li>The association between your SkyLog account and SkyLog Plus purchase identifiers</li>
-    <li>SkyLog local data on that device</li>
+    <li>Account-scoped SkyLog local records on that device (except external files and temporary cache described below)</li>
     <li>The link between SkyLog and your Google or Apple sign-in</li>
   </ul>
 
@@ -123,11 +125,13 @@
   <ul>
     <li>Your <strong>Google or Apple account</strong> itself is not deleted.</li>
     <li><strong>App Store / Google Play subscriptions</strong> are not cancelled automatically when you delete your SkyLog account. Cancel them in your store subscription settings.</li>
+    <li>Files you saved outside SkyLog—such as exported records, passport or recap images, and Travel Rewind videos saved to Photos or Files—are not deleted automatically. Delete them from the destination app if needed.</li>
+    <li>A Travel Rewind temporary video left after an unexpected App exit may not be removed directly by account deletion. It remains only in the device's temporary storage until the operating system removes it or until SkyLog deletes files older than 24 hours when another video is created. To remove it immediately, clear SkyLog's app data in device settings or uninstall the App.</li>
     <li>Cloud deletion normally finishes within 24 hours. It may take longer during a service disruption, and the server retries automatically.</li>
-    <li>To prevent requests already in flight from recreating data, a technical protection record containing only the account UID and deletion status is kept for about 48 hours after deletion completes and is then removed automatically.</li>
+    <li>To prevent requests already in flight from recreating data, a technical protection record containing the account UID, deletion status, processing timestamps, and minimal retry and request identifiers is kept for about 48 hours after deletion completes and is then removed automatically.</li>
     <li>App-private local copies on another offline device cannot be erased remotely at once. The deleted account can no longer access the cloud; clear the App's data or uninstall it on that device to remove its local copy.</li>
     <li>We may retain limited logs where required by law or for security/fraud prevention.</li>
-    <li>Third-party services (Mapbox, AeroDataBox, etc.) may retain request logs under their own policies.</li>
+    <li>Third-party services—such as Mapbox, AeroDataBox, Unity LevelPlay, ironSource Ads, Unity Ads, connected advertising providers, Google UMP, and the App Store or Google Play—may retain relevant records under their own policies.</li>
   </ul>
 
   <h2>If you cannot use the app</h2>
@@ -138,9 +142,9 @@
   <hr>
 
   <h1 id="delete-ja">SkyLog — アカウントおよびデータの削除（日本語）</h1>
-  <p class="meta">アプリ：<strong>SkyLog</strong> · お問い合わせ：<a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a> · 最終更新日：2026-08-15</p>
+  <p class="meta">アプリ：<strong>SkyLog</strong> · お問い合わせ：<a href="mailto:skylog486@gmail.com">skylog486@gmail.com</a> · 最終更新日：2026-08-29</p>
 
-  <p>SkyLogでは、<strong>本アプリ内から直接</strong>データを削除できます。アカウントを維持したまま一部またはすべてのアプリデータのみを消去するか、アカウントを削除してすべてのデータとサインイン情報を削除できます。</p>
+  <p>SkyLogでは、<strong>本アプリ内から直接</strong>データを削除できます。SkyLogアカウントを維持したまま一部またはすべてのアプリデータだけを削除することも、SkyLogアカウント、クラウドデータ、端末内データ、およびSkyLogとのサインイン連携をまとめて削除することもできます。GoogleアカウントまたはApple Accountそのものは削除されません。</p>
 
   <h2>① データのみを削除する（アカウントを維持）</h2>
   <p>サインイン状態およびSkyLogアカウントを維持したまま、次のデータを削除できます。</p>
@@ -152,7 +156,7 @@
       <li><strong>すべて初期化</strong> — あしあと、フライト記録、統計、バッジ、連続記録等、本アプリのデータの大部分を削除します。サインイン中のアカウントは維持されます。</li>
     </ol>
   </div>
-  <p>古いクラウド記録が空の端末データへ復元されることを防ぐため、本アプリが対象データの最新クラウド状態を確認できない間は、初期化ボタンが一時的に無効になる場合があります。初期化の内容はFirebaseへ反映され、確認できなかった場合は再試行をご案内します。アカウントのメールアドレスおよびサインイン状態は削除されません。</p>
+  <p>古いクラウド記録が空の端末データへ復元されることを防ぐため、本アプリが対象データの最新クラウド状態を確認できない間は、初期化ボタンが一時的に無効になる場合があります。初期化した内容はFirebaseにも反映されます。クラウドへの反映を確認できなかった場合は、アプリから再試行をご案内します。アカウントのメールアドレスおよびサインイン状態は削除されません。</p>
 
   <h2>② アカウントを削除する（アカウントおよび全データ）</h2>
   <div class="steps">
@@ -163,7 +167,7 @@
       <li>案内を確認し、<strong>削除</strong>をタップします。</li>
       <li><strong>SkyLog Plusを利用中の場合</strong>、アカウントを削除してもサブスクリプションは自動的に解約されません。App StoreまたはGoogle Playのサブスクリプション設定から別途解約してください。</li>
       <li>GoogleまたはAppleのアカウント確認画面が表示された場合は、以前と同じサインイン方法で再認証します。</li>
-      <li>申請が受け付けられると、アカウントへのアクセスは直ちに遮断され、サインイン画面へ戻ります。対象端末のデータ整理が直ちに開始され、失敗したローカル整理は次回起動時に再試行されます。クラウドデータの削除はバックグラウンドで続行されます。</li>
+      <li>申請が受け付けられると、アカウントへのアクセスは直ちに遮断され、サインイン画面へ戻ります。対象端末内のデータ削除処理が直ちに開始され、完了しなかった処理は次回起動時に再試行されます。クラウドデータの削除はバックグラウンドで続行されます。</li>
     </ol>
   </div>
 
@@ -172,7 +176,7 @@
     <li>SkyLogへのサインインに使用するFirebase Authenticationアカウント</li>
     <li>クラウドに保存されたフライト記録、あしあと、パスポート・プロフィール写真、バッジ・統計その他の同期データ</li>
     <li>SkyLogアカウントとSkyLog Plusの購入識別子との関連付け情報</li>
-    <li>対象端末に保存されたSkyLogのローカルデータ</li>
+    <li>対象端末に保存されたSkyLogのアカウント別ローカル記録（以下に記載する外部保存ファイルおよび一時キャッシュを除きます）</li>
     <li>SkyLogとGoogleまたはAppleによるサインインとの連携</li>
   </ul>
 
@@ -180,15 +184,17 @@
   <ul>
     <li><strong>GoogleアカウントまたはApple Accountそのもの</strong>は削除されません。各サービス提供者が別途管理します。</li>
     <li><strong>Google PlayまたはApp Storeのサブスクリプション</strong>は、SkyLogアカウントを削除しても自動的に解約されません。各ストアのサブスクリプション設定から別途解約してください。</li>
+    <li>書き出した記録、パスポート・年間まとめ画像、写真アプリやファイルアプリに保存したトラベルリワインド動画など、<strong>SkyLogの外部に保存したファイル</strong>は自動的に削除されません。必要に応じて保存先のアプリから削除してください。</li>
+    <li>本アプリが予期せず終了した際に残ったトラベルリワインドの一時動画は、アカウント削除処理で直接削除されない場合があります。このファイルは端末の一時領域にのみ残り、OSの方針に従って削除されるか、次に動画を作成するときに24時間を経過したファイルが削除されます。直ちに削除するには、端末の設定からSkyLogのアプリデータを消去するか、本アプリをアンインストールしてください。</li>
     <li>クラウドデータの削除は通常24時間以内に完了します。サービス障害が発生した場合はさらに時間を要することがあり、サーバーが自動的に再試行します。</li>
-    <li>削除直前に処理中だったリクエストによるデータの再作成を防ぐため、削除完了後もアカウントUIDと削除状態のみを含む技術的な保護記録を約48時間保存し、その後自動削除します。</li>
+    <li>削除直前に処理中だったリクエストによるデータの再作成を防ぐため、削除完了後もアカウントUID、削除状態、処理時刻、および再試行・リクエスト識別に必要な最小限の技術情報を約48時間保存し、その後自動削除します。</li>
     <li>別のオフライン端末に残る本アプリ専用のローカルコピーは、直ちに遠隔消去できません。削除されたアカウントはクラウドへアクセスできなくなります。該当端末で本アプリのデータを消去するか、本アプリをアンインストールするとローカルコピーを削除できます。</li>
     <li>法令上の義務、紛争への対応、セキュリティまたは不正防止のために必要な場合、適用法令で認められる範囲において一部のログを限定的に保存することがあります。</li>
-    <li>Mapbox、AeroDataBoxその他の外部サービスへすでに送信されたリクエストログには、各サービスのポリシーが適用されます。SkyLogは個人情報を販売しません。</li>
+    <li>Mapbox、AeroDataBox、Unity LevelPlay、ironSource Ads、Unity Ads、接続される広告提供者、Google UMP、App StoreまたはGoogle Play等の外部サービスが保存する関連記録には、各サービスのポリシーが適用されます。SkyLogは個人情報を販売しません。</li>
   </ul>
 
   <h2>本アプリを利用できない場合</h2>
-  <p>本アプリへサインインできない場合、または削除に失敗した場合は、<a href="mailto:skylog486@gmail.com?subject=SkyLog%20アカウント削除リクエスト">メールでアカウント削除をリクエスト</a>してください。確認可能なサインイン用メールアドレスがある場合は併せてお知らせください。本人確認後、削除手続きをサポートします。</p>
+  <p>本アプリへサインインできない場合、または削除に失敗した場合は、<a href="mailto:skylog486@gmail.com?subject=SkyLog%20アカウント削除申請">メールでアカウント削除を申請</a>してください。本人確認に使用できるサインイン用メールアドレスがある場合は、併せてお知らせください。本人確認後、削除手続きをサポートします。</p>
 
   <p>プライバシーポリシー：<a href="privacy.html">privacy.html</a></p>
 </body>
